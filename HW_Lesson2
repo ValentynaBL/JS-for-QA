@@ -1,0 +1,49 @@
+// Ex.1
+
+let age = 19;
+let isInRange = (age >= 19 && age <= 90) ? true : false;
+const ternarCondition = isInRange;
+
+// Ex.2
+
+let name2 = prompt('What is your name?');
+alert ('Hi,' + name2);
+let birthday = prompt ('When did you born?');
+let age = 2021 - birthday;
+alert ('You are ' + age + ' years old' );
+
+// Ex.3
+
+let number = prompt ('Please enter the number beetween 60 and 90');
+if (number >= 90 && number <= 100)
+{console.log ('A')} 
+else if (number >= 80 && number < 90)
+{console.log ('B')} 
+else if (number >= 70 && number < 80)
+{console.log ('C')} 
+else if (number >= 60 && number < 70)
+{console.log ('D')} 
+else {console.log ('Your nomber is not between 60 and 90')}
+
+// Ex.4
+
+let language;
+switch (language) {
+    case 'chinese' || 'mandarin':
+        console.log('MOST number of native speakers!');
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'english':
+            console.log('3rd place');
+            break;
+    case 'hindi':
+                console.log('Number 4');
+                break;   
+    case 'arabic':
+                console.log('5th most spoken language');
+                break;               
+    default:
+        console.log('Great language too :D');
+}
