@@ -1,0 +1,38 @@
+// Ex. 1
+
+let post = {
+    title: 'xxx',
+    body: 'body',
+    author: 'nana',
+    views: 12,
+    comment: {
+    firstName: 'first name',
+    lastName: 'last name',
+    body: 'body value',
+    },
+    isLive: true, 
+    someFunction: () => {
+    console.log('My function works')
+    }
+    }; 
+
+    Object.size = function(obj) {
+        var size = 0,
+          key;
+        for (key in obj) {
+          if (obj.hasOwnProperty(key)) size++;
+        }
+        return size;
+      };
+
+      var size = Object.size(post);
+      console.log(size);
+
+      console.log(Object.values(post));
+
+
+// Ex.2
+
+let helloColleagues = (company, team) => {
+  console.log(`Я працюю в ${company} компанії в чудовій команді ${team}`)
+  };
