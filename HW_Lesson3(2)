@@ -1,0 +1,47 @@
+//Ex 2.1
+
+function isEmpty (obj){
+    for (let key in obj) {
+        return false;
+    }
+     return true;
+}
+
+//Ex.2.2
+
+function  maxNumber (a, b){
+    if (a>=b) 
+    return a;
+    else
+    return b; 
+}
+
+//Ex.3.1
+
+let salaries = { Mykola: 250, Pavlo: 250, Petro: 500 }  
+function sum (salaries){
+  for (let key in salaries) {
+        sum += salaries[key];
+      }
+    }
+
+//Ex.3.2
+
+function theRichest (salaries){
+    if(salaries.Mukola >= salaries.Pavlo || salaries.Mukola >= salaries.Petro)
+    return salaries.Mukola;
+    if (salaries.Pavlo > salaries.Mukola || salaries.Pavlo >= salaries.Petro) 
+    return salaries.Pavlo;    
+    else return salaries.Petro;
+        
+    }
+        
+//Ex.3.3
+
+function multiplyNumeric(obj) {
+    for (let key in obj) {
+      if (typeof obj[key] == 'number') {
+        obj[key] *= 2;
+      }
+    }
+  }
