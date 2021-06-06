@@ -1,0 +1,35 @@
+// Ex.1
+
+const numbers = [1, -1, 2, 3];
+
+function sum(array){
+let sum = 0;
+for(let i = 0; i < array.length; i++){
+    sum += array[i];
+    }
+    return sum
+}
+
+console.log(sum(numbers));
+
+// Ex.2
+
+let numbers2 = [5, 2, 1, -10, 8];
+
+function arrayFromRange([]) {
+    
+    return numbers2.sort(); 
+    }
+
+console.log (arrayFromRange(numbers2));
+
+// Ex.3
+
+const numbers3 = [1, 2, 3, 4, 5];
+
+
+function getMax([]) {
+return Math.max.apply(null, numbers3)
+}
+
+console.log(getMax(numbers3)) 
